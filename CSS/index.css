@@ -177,7 +177,7 @@ body{
       float: right;
   }
 
-  @media only screen  and (max-width: 615px){
+  @media only screen  and (max-width: 815px){
     .login-container{
         overflow: hidden;
         width: 100%;
@@ -224,4 +224,12 @@ body{
   text-align: left;
 }
 
+  }
+
+  @media only screen  and (min-width: 816px)  and (max-width: 1056px){
+    .login-container div form h1{
+        font-size: 4rem;
+        font-weight: 1000;
+    }
+    
   }
