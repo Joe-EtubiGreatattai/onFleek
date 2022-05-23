@@ -21,6 +21,17 @@ body{
     min-width: 100%;
 }
 
+.loading-screen-anim{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--light-1);
+    z-index: 4;
+    top: 0;
+    display: grid;
+    place-items: center;
+}
+
 .btn-holder{
     display: flex;
     gap: 1rem;
@@ -177,6 +188,69 @@ body{
       float: right;
   }
 
+#svgText{
+    animation: fill 0.5s ease forwards 2s;
+}
+
+  #svgText path:nth-child(1){
+     stroke-dasharray: 354.1079406738281;
+     stroke-dashoffset: 354.1079406738281;
+     animation:  line-anim 2s ease forwards 0.1s;
+  }
+
+  
+  #svgText path:nth-child(2){
+    stroke-dasharray: 339.78668212890625;
+    stroke-dashoffset: 339.78668212890625;
+    animation:  line-anim 2s ease forwards 0.3s;
+}
+
+#svgText path:nth-child(3){
+    stroke-dasharray: 375.1319885253906;
+    stroke-dashoffset: 375.1319885253906;
+    animation:  line-anim 2s ease forwards 0.5s;
+}
+
+#svgText path:nth-child(4){
+    stroke-dasharray: 202.87179565429688;
+    stroke-dashoffset: 202.87179565429688;
+    animation:  line-anim 2s ease forwards 0.7s;
+}
+
+#svgText path:nth-child(5){
+    stroke-dasharray: 395.00982666015625;
+    stroke-dashoffset: 395.00982666015625; 
+    animation:  line-anim 2s ease forwards 0.9s;   
+}
+
+#svgText path:nth-child(6){
+    stroke-dasharray: 395.0098876953125;
+    stroke-dashoffset: 395.0098876953125;
+    animation:  line-anim 2s ease forwards 1.2s;       
+}
+
+#svgText path:nth-child(7){
+    stroke-dasharray:  382.1815185546875;
+    stroke-dashoffset:  382.1815185546875;    
+    animation:  line-anim 2s ease forwards 1.5s;   
+}
+
+
+@keyframes line-anim{
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes fill{
+    from{
+        fill: transparent;
+    }
+
+    to{
+       fill: var(--dark-1);
+    }
+}
   @media only screen  and (max-width: 815px){
     .login-container{
         overflow: hidden;
@@ -225,6 +299,9 @@ body{
 }
 
   }
+
+
+
 
   @media only screen  and (min-width: 816px)  and (max-width: 1056px){
     .login-container div form h1{

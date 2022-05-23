@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#111">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Varela+Round&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="CSS/homepage.css">
+    <script>
+        var i = 0;
+
+        function buttonClick() {
+            i++;
+            document.getElementById('inc').value = i;
+        }
+    </script>
+</head>
+
+<body>
+<div class="mobile-menu">
+    <p class="exit"><i class="bi bi-x-lg"></i></p>
+    <ul>
+    <li><a href="homepage.html"><ion-icon name="storefront"></ion-icon> Store</a></li>
+    <li><a href="#!"><ion-icon name="person"></ion-icon> Profile</a></li>
+    <li><a href="index.html"><ion-icon name="log-out"></ion-icon> Logout</a></li>
+    </ul>
+</div>
+    <div class="overlay">
+
+    </div>
+
+    <div>
+        <div class="top-div">
+            <a href="#!">
+                <p class="logo">onFleek</p>
+            </a>
+
+            <ul class="nav">
+                <li><a href="homepage.html" class="active">Store</a></li>
+                <li><a href="#!">Profile</a></li>
+                <li><a href="index.html">Logout</a></li>
+            </ul>
+            <span class="menu">
+                <ion-icon name="menu"></ion-icon>
+            </span>
+        </div>
+        <div class="bottom-nav">
+            <ul>
+                <li class="all-product">
+                    <div class="double">
+                        <div class="icon-mobil-menu"><img src="IMAGE/shirt-1.png" alt=""></div>
+                        <div class="icon-mobil-menu"><img src="IMAGE/cargo-1.webp" alt=""></div>
+                    </div>
+                    <p>ALL</p>
+                </li>
+                <li class="flannel-product">
+                    <div class="icon-mobil-menu"><img src="IMAGE/shirt-1.png" alt=""></div>
+                    <p>FLANNELS</p>
+                </li>
+                <li class="cargo-product">
+                    <div class="icon-mobil-menu"><img src="IMAGE/cargo-1.webp" alt=""></div>
+                    <p>CARGO PANTS</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="cart">
+            <ion-icon name="cart"></ion-icon> <span class="number-of-cart-content">
+                <input type="text" id="inc" value="0"></input>
+        </div>
+        <section class="big-container">
+            <div class="cartegories">
+                <ul>
+                    <li>CATEGORY</li>
+                    <li class="all-product">ALL PRODUCTS</li>
+                    <li class="flannel-product">FLANNELS</li>
+                    <li class="cargo-product">CARGO PANTS</li>
+                </ul>
+            </div>
+
+            <div class="products">
+                <p class="displayed-product-label">All Products</p>
+                <div class="product-holder">
+                    <!--card start-->
+                    <div class="center-div flannel">
+                        <div class="product-card-1">
+                            <div class="product-card-1-image">
+                                <img src="IMAGE/shirt-3.png" alt="">
+                            </div>
+                            <div class="product-card-1-text">
+                                <p class="product-name">Classic Flannel</p>
+                                <p>illum corrupti officiis, cupiditate dolorum quae doloribus.
+                                    Reiciendis totam illo voluptatibus quidem dignissimos veniam earum dolores.</p>
+                                <div class="product-card-1-bottom-div">
+                                    <p class="price-of-product-card-1"><i class="bi bi-coin"></i> 5,000</p>
+
+                                    <div class="button-holder">
+                                        <div class="button-holder"> <button>Place Order</button> <button
+                                                onclick="buttonClick();">
+                                                <ion-icon name="cart"></ion-icon>
+                                            </button></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--card end-->
+                    <!--card start-->
+                    <div class="center-div cargo">
+                        <div class="product-card-1">
+                            <div class="product-card-1-image">
+                                <img src="IMAGE/cargo-1.webp" alt="">
+                            </div>
+                            <div class="product-card-1-text">
+                                <p class="product-name">Classic cargo pant</p>
+                                <p>illum corrupti officiis, cupiditate dolorum quae doloribus.
+                                    Reiciendis totam illo voluptatibus quidem dignissimos veniam earum dolores.</p>
+                                <div class="product-card-1-bottom-div">
+                                    <p class="price-of-product-card-1"><i class="bi bi-coin"></i> 5,000</p>
+
+                                    <div class="button-holder"> <button>Place Order</button> <button
+                                            onclick="buttonClick();">
+                                            <ion-icon name="cart"></ion-icon>
+                                        </button></div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--card end-->
+                    <!--card start-->
+                    <div class="center-div flannel">
+                        <div class="product-card-1">
+                            <div class="product-card-1-image">
+                                <img src="IMAGE/shirt-4.jpeg" alt="">
+                            </div>
+                            <div class="product-card-1-text">
+                                <p class="product-name">Classic Flannel</p>
+                                <p>illum corrupti officiis, cupiditate dolorum quae doloribus.
+                                    Reiciendis totam illo voluptatibus quidem dignissimos veniam earum dolores.</p>
+                                <div class="product-card-1-bottom-div">
+                                    <p class="price-of-product-card-1"><i class="bi bi-coin"></i> 5,000</p>
+
+                                    <div class="button-holder"> <button>Place Order</button> <button
+                                            onclick="buttonClick();">
+                                            <ion-icon name="cart"></ion-icon>
+                                        </button></div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--card end-->
+                    <!--card start-->
+                    <div class="center-div cargo">
+                        <div class="product-card-1">
+                            <div class="product-card-1-image">
+                                <img src="IMAGE/cargo-1.webp" alt="">
+                            </div>
+                            <div class="product-card-1-text">
+                                <p class="product-name">Classic cargo pant</p>
+                                <p>illum corrupti officiis, cupiditate dolorum quae doloribus.
+                                    Reiciendis totam illo voluptatibus quidem dignissimos veniam earum dolores.</p>
+                                <div class="product-card-1-bottom-div">
+                                    <p class="price-of-product-card-1"><i class="bi bi-coin"></i> 5,000</p>
+
+                                    <div class="button-holder"> <button>Place Order</button> <button
+                                            onclick="buttonClick();">
+                                            <ion-icon name="cart"></ion-icon>
+                                        </button></div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--card end-->
+                    <!--card start-->
+                    <div class="center-div flannel">
+                        <div class="product-card-1">
+                            <div class="product-card-1-image">
+                                <img src="IMAGE/shirt-6.webp" alt="">
+                            </div>
+                            <div class="product-card-1-text">
+                                <p class="product-name">Mixed art Flannel</p>
+                                <p>illum corrupti officiis, cupiditate dolorum quae doloribus.
+                                    Reiciendis totam illo voluptatibus quidem dignissimos veniam earum dolores.</p>
+                                <div class="product-card-1-bottom-div">
+                                    <p class="price-of-product-card-1"><i class="bi bi-coin"></i> 5,000</p>
+
+                                    <div class="button-holder"> <button>Place Order</button> <button
+                                            onclick="buttonClick();">
+                                            <ion-icon name="cart"></ion-icon>
+                                        </button></div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--card end-->
+                    <!--card start-->
+                    <div class="center-div flannel">
+                        <div class="product-card-1">
+                            <div class="product-card-1-image">
+                                <img src="IMAGE/shirt-6.webp" alt="">
+                            </div>
+                            <div class="product-card-1-text">
+                                <p class="product-name">Mixed art Flannel</p>
+                                <p>illum corrupti officiis, cupiditate dolorum quae doloribus.
+                                    Reiciendis totam illo voluptatibus quidem dignissimos veniam earum dolores.</p>
+                                <div class="product-card-1-bottom-div">
+                                    <p class="price-of-product-card-1"><i class="bi bi-coin"></i> 5,000</p>
+
+                                    <div class="button-holder"> <button>Place Order</button> <button
+                                            onclick="buttonClick();">
+                                            <ion-icon name="cart"></ion-icon>
+                                        </button></div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--card end-->
+                    <!--card start-->
+                    <div class="center-div flannel">
+                        <div class="product-card-1">
+                            <div class="product-card-1-image">
+                                <img src="IMAGE/shirt-3.png" alt="">
+                            </div>
+                            <div class="product-card-1-text">
+                                <p class="product-name">Classic Flannel</p>
+                                <p>illum corrupti officiis, cupiditate dolorum quae doloribus.
+                                    Reiciendis totam illo voluptatibus quidem dignissimos veniam earum dolores.</p>
+                                <div class="product-card-1-bottom-div">
+                                    <p class="price-of-product-card-1"><i class="bi bi-coin"></i> 5,000</p>
+
+                                    <div class="button-holder"> <button>Place Order</button> <button
+                                            onclick="buttonClick();">
+                                            <ion-icon name="cart"></ion-icon>
+                                        </button></div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--card end-->
+                    <!--card start-->
+                    <div class="center-div cargo">
+                        <div class="product-card-1">
+                            <div class="product-card-1-image">
+                                <img src="IMAGE/cargo-3.webp" alt="">
+                            </div>
+                            <div class="product-card-1-text">
+                                <p class="product-name">Classic cargo pant</p>
+                                <p>illum corrupti officiis, cupiditate dolorum quae doloribus.
+                                    Reiciendis totam illo voluptatibus quidem dignissimos veniam earum dolores.</p>
+                                <div class="product-card-1-bottom-div">
+                                    <p class="price-of-product-card-1"><i class="bi bi-coin"></i> 5,000</p>
+
+                                    <div class="button-holder"> <button>Place Order</button> <button
+                                            onclick="buttonClick();">
+                                            <ion-icon name="cart"></ion-icon>
+                                        </button></div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--card end-->
+                    <!--card start-->
+                    <div class="center-div flannel">
+                        <div class="product-card-1">
+                            <div class="product-card-1-image">
+                                <img src="IMAGE/shirt-6.webp" alt="">
+                            </div>
+                            <div class="product-card-1-text">
+                                <p class="product-name">Mixed art Flannel</p>
+                                <p>illum corrupti officiis, cupiditate dolorum quae doloribus.
+                                    Reiciendis totam illo voluptatibus quidem dignissimos veniam earum dolores.</p>
+                                <div class="product-card-1-bottom-div">
+                                    <p class="price-of-product-card-1"><i class="bi bi-coin"></i> 5,000</p>
+
+                                    <div class="button-holder"> <button>Place Order</button> <button
+                                            onclick="buttonClick();">
+                                            <ion-icon name="cart"></ion-icon>
+                                        </button></div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--card end-->
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        $(".all-product").click(function () {
+            $(".flannel").fadeIn('fast');
+            $(".cargo").fadeIn('fast');
+            $(".all-product").toggleClass("active-state");
+            $(".flannel-product").removeClass("active-state");
+            $(".cargo-product").removeClass("active-state");
+        });
+
+        $(".flannel-product").click(function () {
+            $(".flannel").fadeIn('fast');
+            $(".cargo").fadeOut('fast');
+            $(".all-product").removeClass("active-state");
+            $(".flannel-product").toggleClass("active-state");
+            $(".cargo-product").removeClass("active-state");
+        });
+
+        $(".cargo-product").click(function () {
+            $(".flannel").fadeOut('fast');
+            $(".cargo").fadeIn('fast');
+            $(".all-product").removeClass("active-state");
+            $(".flannel-product").removeClass("active-state");
+            $(".cargo-product").toggleClass("active-state");
+        });
+
+        $(".mobile-menu").fadeOut('fast');
+            $(".overlay").fadeOut('fast');
+
+        $(".exit").click(function () {
+            $(".mobile-menu").fadeOut('fast');
+            $(".overlay").fadeOut('fast');
+        });
+
+
+        $(".menu").click(function () {
+            $(".mobile-menu").fadeIn('fast');
+            $(".overlay").fadeIn('fast');
+        });
+
+
+        document.querySelector(".all-product").addEventListener("click", text1);
+
+        function text1() {
+            document.querySelector(".displayed-product-label").innerHTML = "All Products";
+        }
+
+
+        document.querySelector(".flannel-product").addEventListener("click", text2);
+
+        function text2() {
+            document.querySelector(".displayed-product-label").innerHTML = "Flannels";
+        }
+
+
+        document.querySelector(".cargo-product").addEventListener("click", text3);
+
+        function text3() {
+            document.querySelector(".displayed-product-label").innerHTML = "Cargo pants";
+        }
+
+        var i = 0;
+
+        function buttonClick() {
+            document.getElementById('inc').value = ++i;
+        }
+    </script>
+</body>
+
+</html>
