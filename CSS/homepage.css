@@ -52,12 +52,12 @@ body{
     justify-content: center;
     align-items: center;
     height: auto;
-    padding: .3rem 1rem;
+    padding: .5rem 1rem;
     position: fixed;
     top: 0;
     z-index: 10;
     background: var(--light-1);
-    box-shadow: 0px 3px 5px var(--light-2);
+    box-shadow: 1px -1px 3px var(--text-color-1);
 }
 
 .menu{
@@ -304,6 +304,8 @@ text-align: center;
         background: var(--dark-1);
         z-index: 14;
         opacity: 1;
+        display: grid;
+        place-items: center;
     }
 
     .mobile-menu{
@@ -317,7 +319,8 @@ text-align: center;
         justify-content: center;
         align-items: center;
         z-index: 15;
-        opacity: .8;
+        opacity: .9;
+        top: 0;
     }
 
     .mobile-menu ul {
@@ -358,15 +361,15 @@ text-align: center;
 }
 
     .products{
-        position: absolute;
+        position: relative;
         width: 100%;
         overflow-y: scroll;
         overflow-x:hidden ;
         right: 0rem;
+        bottom: 2rem;
      }
 
      .cartegories{
-       
         display: none;
     }
     
@@ -389,7 +392,7 @@ text-align: center;
         position: fixed;
         bottom: 0;
         background: var(--light-1);
-        box-shadow: 0px 3px 8px var(--light-2);
+        box-shadow: 0px 3px 8px var(--text-color-1);
         z-index: 10;
     }
 
@@ -417,20 +420,29 @@ place-items: center;
     font-size: 1.5rem;
     color: var(--dark-1);
 }
+.cart{
+    transform: scale(.7);
+    right: .2rem;
+}
+
 
 .bottom-nav ul li p{
     font-size: .5rem;
 }
 
-.center-div:nth-last-child(1){
-    margin-bottom: 4rem;
-}
+
 
 .active-state{
     background: transparent !important;
     color: var(--dark-1);
     font-weight: 1000;
     font-size: .9rem;
+}
+
+
+
+.big-container{ 
+    padding: 0rem;
 }
 
 }
@@ -455,4 +467,58 @@ place-items: center;
         gap: 3rem;
 
     }
+}
+
+@keyframes line-anim{
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+
+
+
+
+
+
+  #svgText path:nth-child(1){
+     stroke-dasharray: 354.1079406738281;
+     stroke-dashoffset: 354.1079406738281;
+     animation:  line-anim 2s ease infinite alternate 0.1s;
+  }
+
+  
+  #svgText path:nth-child(2){
+    stroke-dasharray: 339.78668212890625;
+    stroke-dashoffset: 339.78668212890625;
+    animation:  line-anim 2s ease infinite alternate 0.3s;
+}
+
+#svgText path:nth-child(3){
+    stroke-dasharray: 375.1319885253906;
+    stroke-dashoffset: 375.1319885253906;
+    animation:  line-anim 2s ease infinite alternate 0.5s;
+}
+
+#svgText path:nth-child(4){
+    stroke-dasharray: 202.87179565429688;
+    stroke-dashoffset: 202.87179565429688;
+    animation:  line-anim 2s ease infinite alternate 0.7s;
+}
+
+#svgText path:nth-child(5){
+    stroke-dasharray: 395.00982666015625;
+    stroke-dashoffset: 395.00982666015625; 
+    animation:  line-anim 2s ease infinite alternate 0.9s;   
+}
+
+#svgText path:nth-child(6){
+    stroke-dasharray: 395.0098876953125;
+    stroke-dashoffset: 395.0098876953125;
+    animation:  line-anim 2s ease infinite alternate 1.2s;       
+}
+
+#svgText path:nth-child(7){
+    stroke-dasharray:  382.1815185546875;
+    stroke-dashoffset:  382.1815185546875;    
+    animation:  line-anim 2s ease infinite alternate 1.5s;   
 }
