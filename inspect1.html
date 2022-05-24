@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#111">
+    <title>inspect</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Varela+Round&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="CSS/homepage.css">
+    <link rel="stylesheet" href="CSS/inspect.css">
+    <script>
+        var i = 0;
+
+        function buttonClick() {
+            i++;
+            document.getElementById('inc').value = i;
+        }
+    </script>
+</head>
+
+<body>
+    <div class="mobile-menu">
+        <p class="exit"><i class="bi bi-x-lg"></i></p>
+        <ul>
+            <li><a href="homepage.html">
+                    <ion-icon name="storefront"></ion-icon> Store
+                </a></li>
+            <li><a href="#!">
+                    <ion-icon name="person"></ion-icon> Profile
+                </a></li>
+                <li><a href="#!">
+                    <ion-icon name="cart"></ion-icon> Cart
+                </a></li>
+            <li><a href="index.html">
+                    <ion-icon name="log-out"></ion-icon> Logout
+                </a></li>
+        </ul>
+    </div>
+    <div class="overlay">
+
+    </div>
+
+    <div>
+        <div class="top-div">
+            <a href="#!">
+                <p class="logo">onFleek</p>
+            </a>
+
+            <ul class="nav">
+                <li><a href="homepage.html" class="active">Store</a></li>
+                <li><a href="#!">Profile</a></li>
+                <li><a href="#!">Cart</a></li>
+                <li><a href="index.html">Logout</a></li>
+            </ul>
+            <span class="menu">
+                <ion-icon name="menu"></ion-icon>
+            </span>
+        </div>
+
+
+        <div class="cart">
+            <ion-icon name="cart"></ion-icon> <span class="number-of-cart-content">
+                <input type="text" id="inc" value="0"></input>
+        </div>
+  <section class="inspect">
+       <div class="cusomizer-tool-bar">
+           <ul>
+               <li><div><img src="IMAGE/collar-1.jpg.opdownload" alt=""></div> <p>Collar</p></li>
+               <li><div><img src="IMAGE/sleeve-2.jpg" alt=""></div> <p>Sleeves</p></li>
+               <li><div><img src="IMAGE/shirt-face.jpg" alt=""></div> <p>Front & Back</p></li>
+               <li></li>
+           </ul>
+       </div>
+            <div class="inspect-img">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="IMAGE/shirt-6.webp" alt=""></div>
+                        <div class="swiper-slide"><img src="IMAGE/shirt-6.webp" alt=""></div>
+                        <div class="swiper-slide"><img src="IMAGE/shirt-6.webp" alt=""></div>
+                        <div class="swiper-slide"><img src="IMAGE/shirt-6.webp" alt=""></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="inspect-product-detail">
+
+                <a href="homepage.html" class="return-link"> <ion-icon name="arrow-back"></ion-icon> Back to store</a>
+   
+                <div class="product-card-1-text">
+                    <p class="product-name">Classic Flannel</p>
+                    <div class="view-holders">
+
+                        <h5 class="marginer description-toggler focus">Description</h5>
+
+                        <h5 class="review-toggler"> Reviews</h5>
+                    </div>
+                    <div class="description-holder">
+                        <p class="lighter-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Pariatur officia eum mollitia officiis veritatis praesentium,
+                            minima repudiandae, esse modi fugiat quasi consequatur
+                            nesciunt assumenda rem? Dolorum et quod exercitationem unde! illum corrupti officiis,
+                            cupiditate
+                            dolorum
+                            quae doloribus.
+                            Reiciendis totam illo voluptatibus quidem dignissimos veniam earum dolores.
+                        </p>
+                       
+                        <div class="sizing"><span class="bolden">SIZE</span>
+                            <div class="size-btns"><button>XS</button> <button>S</button>
+                                <button>M</button><button>L</button><button>XL</button></div>
+                        </div>
+
+                        <div class="sizing"><span class="bolden">Quantity</span>
+                             <input type="number" id="number" value="0" class="qnty-counter"/>
+                        </div>
+                        <div class="product-card-1-bottom-div">
+                            <p class="price-of-product-card-1"><i class="bi bi-coin"></i> 5,000</p>
+
+                            <div class="button-holder">
+                                <div class="button-holder"> <button>Place Order</button> <button
+                                        onclick="buttonClick();">
+                                        <ion-icon name="cart"></ion-icon>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review-holder">
+                        <!--review card start here-->
+                        <div class="review-card">
+                            <div class="review-card-visible-content">
+                                <div class="review-card-image">
+                                    <img src="IMAGE/user-1.png" alt="" srcset="">
+                                </div>
+                                <div class="review-card-details">
+                                    <p class="username">Jane doe</p>
+                                    <p class="stars">
+                                        <ul class="star-list">
+                                            <li>
+                                                <ion-icon name="star"></ion-icon>
+                                            </li>
+                                            <li>
+                                                <ion-icon name="star"></ion-icon>
+                                            </li>
+                                            <li>
+                                                <ion-icon name="star"></ion-icon>
+                                            </li>
+                                            <li>
+                                                <ion-icon name="star"></ion-icon>
+                                            </li>
+                                            <li>
+                                                <ion-icon name="star-half"></ion-icon>
+                                            </li>
+                                        </ul>
+                                    </p>
+                                    <p class="date">24/07/2021</p>
+                                </div>
+                                <div class="reaction">
+                                    <span>Purchased</span>
+                                    <ion-icon name="checkmark-done"></ion-icon>
+                                </div>
+                            </div>
+                            <div class="review-body">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Perferendis veniam quisquam numquam vero aut minima aspernatur
+                                    esse possimus, blanditiis obcaecati excepturi,
+                                    a iure, in molestiae accusantium aliquid placeat dolorum. Perferendis.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!--Review Card end here-->
+
+                        <!--review card start here-->
+                        <div class="review-card">
+                            <div class="review-card-visible-content">
+                                <div class="review-card-image">
+                                    <img src="IMAGE/user-1.png" alt="" srcset="">
+                                </div>
+                                <div class="review-card-details">
+                                    <p class="username">Jane doe</p>
+                                    <p class="stars">
+                                        <ul class="star-list">
+                                            <li>
+                                                <ion-icon name="star"></ion-icon>
+                                            </li>
+                                            <li>
+                                                <ion-icon name="star"></ion-icon>
+                                            </li>
+                                            <li>
+                                                <ion-icon name="star"></ion-icon>
+                                            </li>
+                                            <li>
+                                                <ion-icon name="star"></ion-icon>
+                                            </li>
+                                            <li>
+                                                <ion-icon name="star-half"></ion-icon>
+                                            </li>
+                                        </ul>
+                                    </p>
+                                    <p class="date">24/07/2021</p>
+                                </div>
+                                <div class="reaction">
+                                    <span>Purchased</span>
+                                    <ion-icon name="checkmark-done"></ion-icon>
+                                </div>
+                            </div>
+                            <div class="review-body">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Perferendis veniam quisquam numquam vero aut minima aspernatur
+                                    esse possimus, blanditiis obcaecati excepturi,
+                                    a iure, in molestiae accusantium aliquid placeat dolorum. Perferendis.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!--Review Card end here-->
+
+                        <!--review card start here-->
+                        <div class="review-card">
+                            <div class="review-card-visible-content">
+                                <div class="review-card-image">
+                                    <img src="IMAGE/user-1.png" alt="" srcset="">
+                                </div>
+                                <div class="review-card-details">
+                                    <p class="username">Jane doe</p>
+                                    <p class="stars">
+                                        <ul class="star-list">
+                                            <li>
+                                                <ion-icon name="star"></ion-icon>
+                                            </li>
+                                            <li>
+                                                <ion-icon name="star"></ion-icon>
+                                            </li>
+                                            <li>
+                                                <ion-icon name="star"></ion-icon>
+                                            </li>
+                                            <li>
+                                                <ion-icon name="star"></ion-icon>
+                                            </li>
+                                            <li>
+                                                <ion-icon name="star-half"></ion-icon>
+                                            </li>
+                                        </ul>
+                                    </p>
+                                    <p class="date">24/07/2021</p>
+                                </div>
+                                <div class="reaction">
+                                    <span>Purchased</span>
+                                    <ion-icon name="checkmark-done"></ion-icon>
+                                </div>
+                            </div>
+                            <div class="review-body">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Perferendis veniam quisquam numquam vero aut minima aspernatur
+                                    esse possimus, blanditiis obcaecati excepturi,
+                                    a iure, in molestiae accusantium aliquid placeat dolorum. Perferendis.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!--Review Card end here-->
+
+                        <!--review card start here-->
+                        <div class="review-card">
+                            <div class="review-card-visible-content">
+                                <div class="review-card-image">
+                                    <img src="IMAGE/user-1.png" alt="" srcset="">
+                                </div>
+                                <div class="review-card-details">
+                                    <p class="username">Jane doe</p>
+                                    <p class="stars">
+                                        <ul class="star-list">
+                                            <li>
+                                                <ion-icon name="star"></ion-icon>
+                                            </li>
+                                            <li>
+                                                <ion-icon name="star"></ion-icon>
+                                            </li>
+                                            <li>
+                                                <ion-icon name="star"></ion-icon>
+                                            </li>
+                                            <li>
+                                                <ion-icon name="star"></ion-icon>
+                                            </li>
+                                            <li>
+                                                <ion-icon name="star-half"></ion-icon>
+                                            </li>
+                                        </ul>
+                                    </p>
+                                    <p class="date">24/07/2021</p>
+                                </div>
+                                <div class="reaction">
+                                    <span>Purchased</span>
+                                    <ion-icon name="checkmark-done"></ion-icon>
+                                </div>
+                            </div>
+                            <div class="review-body">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Perferendis veniam quisquam numquam vero aut minima aspernatur
+                                    esse possimus, blanditiis obcaecati excepturi,
+                                    a iure, in molestiae accusantium aliquid placeat dolorum. Perferendis.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!--Review Card end here-->
+
+                        <!--review card start here-->
+                        <div class="review-card">
+                            <div class="review-card-visible-content">
+                                <div class="review-card-image">
+                                    <img src="IMAGE/user-1.png" alt="" srcset="">
+                                </div>
+                                <div class="review-card-details">
+                                    <p class="username">Jane doe</p>
+                                    <p class="stars">
+                                        <ul class="star-list">
+                                            <li>
+                                                <ion-icon name="star"></ion-icon>
+                                            </li>
+                                            <li>
+                                                <ion-icon name="star"></ion-icon>
+                                            </li>
+                                            <li>
+                                                <ion-icon name="star"></ion-icon>
+                                            </li>
+                                            <li>
+                                                <ion-icon name="star"></ion-icon>
+                                            </li>
+                                            <li>
+                                                <ion-icon name="star-half"></ion-icon>
+                                            </li>
+                                        </ul>
+                                    </p>
+                                    <p class="date">24/07/2021</p>
+                                </div>
+                                <div class="reaction">
+                                    <span>Purchased</span>
+                                    <ion-icon name="checkmark-done"></ion-icon>
+                                </div>
+                            </div>
+                            <div class="review-body">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Perferendis veniam quisquam numquam vero aut minima aspernatur
+                                    esse possimus, blanditiis obcaecati excepturi,
+                                    a iure, in molestiae accusantium aliquid placeat dolorum. Perferendis.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!--Review Card end here-->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
+    <script>
+        $(".all-product").click(function () {
+            $(".flannel").fadeIn('fast');
+            $(".cargo").fadeIn('fast');
+            $(".all-product").toggleClass("active-state");
+            $(".flannel-product").removeClass("active-state");
+            $(".cargo-product").removeClass("active-state");
+        });
+
+        $(".flannel-product").click(function () {
+            $(".flannel").fadeIn('fast');
+            $(".cargo").fadeOut('fast');
+            $(".all-product").removeClass("active-state");
+            $(".flannel-product").toggleClass("active-state");
+            $(".cargo-product").removeClass("active-state");
+        });
+
+        $(".cargo-product").click(function () {
+            $(".flannel").fadeOut('fast');
+            $(".cargo").fadeIn('fast');
+            $(".all-product").removeClass("active-state");
+            $(".flannel-product").removeClass("active-state");
+            $(".cargo-product").toggleClass("active-state");
+        });
+
+        $(".mobile-menu").fadeOut('fast');
+        $(".overlay").fadeOut('fast');
+
+        $(".exit").click(function () {
+            $(".mobile-menu").fadeOut('fast');
+            $(".overlay").fadeOut('fast');
+        });
+
+
+        $(".menu").click(function () {
+            $(".mobile-menu").fadeIn('fast');
+            $(".overlay").fadeIn('fast');
+        });
+
+        
+        $(".description-toggler").click(function () {
+            $(".description-holder").fadeIn('fast');
+            $(".review-holder").fadeOut('fast');
+            $(".review-toggler").removeClass("focus");
+            $(".description-toggler").addClass("focus");
+        });
+
+     
+
+        $(".review-toggler").click(function () {
+            $(".description-holder").fadeOut('fast');
+            $(".review-holder").fadeIn('fast');
+            $(".review-toggler").addClass("focus");
+            $(".description-toggler").removeClass("focus");
+        });
+
+
+        document.querySelector(".all-product").addEventListener("click", text1);
+
+        function text1() {
+            document.querySelector(".displayed-product-label").innerHTML = "All Products";
+        }
+
+
+        document.querySelector(".flannel-product").addEventListener("click", text2);
+
+        function text2() {
+            document.querySelector(".displayed-product-label").innerHTML = "Flannels";
+        }
+
+
+        document.querySelector(".cargo-product").addEventListener("click", text3);
+
+        function text3() {
+            document.querySelector(".displayed-product-label").innerHTML = "Cargo pants";
+        }
+
+        var i = 0;
+
+        function buttonClick() {
+            document.getElementById('inc').value = ++i;
+        }
+
+
+    </script>
+</body>
+
+</html>

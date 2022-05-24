@@ -80,15 +80,26 @@ body{
     cursor: pointer;
 }
 
-.nav li a:hover{
+
+.nav li::after{
+    content: '';
+    position: absolute;
+    width: 0rem;
+    height: 2px;
+    margin-left: -3.5rem;
+    margin-top: 1.2rem;
     background: var(--dark-1);
-    color: var(--light-1);
+    transition: var(--transitime) ease;
+}
+
+.nav li:hover::after{
+    width: 3rem;
 }
 
 .active{
-    padding: .3rem 1rem;
-    background: var(--dark-1);
-    color: var(--light-1);
+  font-weight: 900;
+  font-size: 1rem;
+  text-shadow: 0px 1px 1px var(--dark-1);
 }
 
 .big-container{
