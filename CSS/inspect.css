@@ -44,6 +44,79 @@
       background: var(--dark-1);
   }
 
+  .billing{
+      width: 90%;
+      height: auto;
+      margin-left: 3rem;
+      display: grid;
+      gap: 3rem;
+      grid-template-columns: repeat(auto-fill,minmax(170px,1fr)); 
+  
+  }
+
+  .billing-info-box{
+    background: #fff;
+    border-radius: 2px;
+    border: 1px solid var(--text-color-1);
+  }
+
+  .billing-info-box div:nth-child(1){
+      font-weight: 600;
+      font-size: .8rem;
+      padding: .3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-bottom: 1px solid var(--text-color-1);
+  }
+
+  .billing-info-box div:nth-child(1) ion-icon{
+      margin-left: auto;
+      color: var(--text-color-1);
+      padding: .2rem;
+      cursor: pointer;
+      border-radius: 50%;
+    transition: var(--transitime) ease;
+  }
+
+  .billing-info-box div ion-icon:hover{
+      background: var(--light-2);
+  }
+
+  
+  .billing-info-box div:nth-child(2){
+    padding: .3rem;
+}
+
+.billing-info-box div:nth-child(2) p:nth-child(2){
+    margin-top: .5rem;
+}
+
+.bolder{
+    font-weight: 600;
+}
+  
+  .username{
+      font-size: .8rem;
+  }
+
+  .location{
+      font-size: .7rem;
+  }
+
+  .lighter{
+      color: #aaa;
+  }
+
+  .asteric{
+      display: flex;
+      list-style: none;
+      font-size: .5rem;
+      gap: .3rem;
+      color: #bbb;
+      margin: .7rem 0px .3rem 0;
+  }
+
   .product-name{
       margin-left: 3rem;
   }
@@ -147,6 +220,11 @@
     display: block;
     width: 90%;
     margin-left: 3rem;
+}
+
+.billing-holder{
+    width: 100%;
+    height: auto;
 }
 
 .review-holder{
@@ -360,6 +438,15 @@ transform: scale(1.1);
     margin-left: 1rem;
 }
 
+.billing{
+    width: 100%;
+    height: auto;
+    margin-left: 0rem;
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr)); 
+
+}
 
 .product-card-1-bottom-div{
     margin-top: 1rem;
@@ -386,7 +473,11 @@ transform: scale(1.1);
 }
 
 .return-link{
-    margin-left: 1rem;
+    margin: 1rem 1rem 0px 1rem;
+}
+
+.margin-top{
+    margin-top: 2rem;
 }
 
 .cusomizer-tool-bar{
@@ -395,7 +486,7 @@ transform: scale(1.1);
     width: 3rem;
     height: 6rem;
     z-index: 1;
-    transform: scale(.7);
+    transform: scale(.8);
 }
 
 .review-holder{
