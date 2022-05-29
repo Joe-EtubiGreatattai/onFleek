@@ -25,18 +25,6 @@
   <div class="mobile-menu">
     <p class="exit"><i class="bi bi-x-lg"></i></p>
     <ul>
-      <li><a href="homepage.html">
-          <ion-icon name="storefront"></ion-icon> Store
-        </a></li>
-      <li><a href="stylepage.html">
-          <ion-icon name="thumbs-up"></ion-icon> Style card
-        </a></li>
-      <li><a href="#!">
-          <ion-icon name="person"></ion-icon> Profile
-        </a></li>
-      <li><a href="cart.html">
-          <ion-icon name="cart"></ion-icon> Cart
-        </a></li>
       <li><a href="index.html">
           <ion-icon name="log-out"></ion-icon> Logout
         </a></li>
@@ -70,23 +58,49 @@
   </div>
 
   <div>
-    <div class="top-div">
-      <a href="#!">
-        <p class="logo">onFleek</p>
-      </a>
+    <div class="div-1 top-div">
+      <span class="menu">
+          <ion-icon name="menu"></ion-icon>
+      </span>
+      
 
       <ul class="nav">
-        <li><a href="homepage.html">Store</a></li>
-        <li><a href="stylepage.html" class="active">Style card</a></li>
-        <li><a href="#!">Profile</a></li>
-        <li><a href="cart.html">Cart</a></li>
-        <li><a href="index.html">Logout</a></li>
+          <li><a href="homepage.html" class="active">Store</a></li>
+          <li><a href="stylepage.html"> Style card</a></li>
+          <li><a href="#!">Profile</a></li>
+          <li><a href="cart.html">Cart</a></li>
+          <li><a href="index.html">Logout</a></li>
       </ul>
-      <span class="menu">
-        <ion-icon name="menu"></ion-icon>
-      </span>
-    </div>
 
+      <a href="#!" class="logoholder">
+          <p class="logo">onFleek</p>
+      </a>
+  </div>
+
+  <div class="bottom-nav">
+    <ul>
+        <li class="bottom-nav-item home">
+            <ion-icon name="home"></ion-icon> <a href="homepage.html">
+                <p class="nav-title">HOME</p>
+            </a>
+        </li>
+        <li class="bottom-nav-item fit active-nav">
+            <ion-icon name="id-card"></ion-icon> <a href="stylepage.html">
+                <p class="nav-title">FITS</p>
+            </a>
+        </li>
+        <li class="bottom-nav-item profile">
+            <ion-icon name="person"></ion-icon> <a href="#!">
+                <p class="nav-title">PROFILE</p>
+            </a>
+        </li>
+        <li class="bottom-nav-item cart-nav">
+            <ion-icon name="cart"></ion-icon> <a href="cart.html">
+                <p class="nav-title">CART</p>
+            </a>
+        </li>
+    </ul>
+</div>
 
     <section class="stylecard-page">
       <!--start card-->
@@ -169,7 +183,7 @@
 <!--end card-->
     </section>
   </div>
-
+<script src="JS/script.js"></script>
   <script>
     $("#like-1").toggle();
 

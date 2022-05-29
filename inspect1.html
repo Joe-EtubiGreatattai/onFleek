@@ -38,7 +38,7 @@
                     <ion-icon name="storefront"></ion-icon> Store
                 </a></li>
                 <li><a href="stylepage.html">
-                    <ion-icon name="thumbs-up"></ion-icon> Style card
+                    <ion-icon name="id-card"></ion-icon> Fit
                   </a></li>
             <li><a href="#!">
                     <ion-icon name="person"></ion-icon> Profile
@@ -79,10 +79,11 @@
     </div>
 
     <div>
-        <div class="top-div">
-            <a href="#!">
-                <p class="logo">onFleek</p>
-            </a>
+        <div class="div-1 top-div">
+            <span class="menu">
+                <ion-icon name="menu"></ion-icon>
+            </span>
+            
 
             <ul class="nav">
                 <li><a href="homepage.html" class="active">Store</a></li>
@@ -91,16 +92,14 @@
                 <li><a href="cart.html">Cart</a></li>
                 <li><a href="index.html">Logout</a></li>
             </ul>
-            <span class="menu">
-                <ion-icon name="menu"></ion-icon>
-            </span>
+
+            <a href="#!" class="logoholder">
+                <p class="logo">onFleek</p>
+            </a>
         </div>
 
 
-        <div class="cart">
-            <ion-icon name="cart"></ion-icon> <span class="number-of-cart-content">
-                <input type="text" id="inc" value="0"></input>
-        </div>
+       
         <section class="inspect">
            
             <div class="inspect-img">
@@ -141,7 +140,11 @@
                             Reiciendis totam illo voluptatibus quidem dignissimos veniam earum dolores.
                         </p>
                         <div class="sizing"><span class="bolden">Quantity</span>
-                            <input type="number" id="number" value="0" class="qnty-counter" />
+                        <div class="qty-holder">
+                            <div class="qty-element dark-btn"><ion-icon name="add"></ion-icon></div>
+                            <div class="qty-element">3</div>
+                            <div class="qty-element dark-btn"><ion-icon name="remove"></ion-icon></div>
+                        </div>
                         </div>
                         <div class="sizing"><span class="bolden">SIZE</span>
                             <div class="size-btns"><button>XS</button> <button>S</button>
@@ -153,7 +156,7 @@
                             <p class="price-of-product-card-1"><i class="bi bi-coin"></i> 5,000</p>
 
                             <div class="button-holder">
-                                <div class="button-holder"> <button>Place Order</button> <button
+                                <div class="button-holder"><button
                                         onclick="buttonClick();">
                                         <ion-icon name="cart"></ion-icon>
                                     </button>
