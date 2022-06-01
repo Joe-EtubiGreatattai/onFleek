@@ -25,6 +25,18 @@
     <div class="mobile-menu">
         <p class="exit"><i class="bi bi-x-lg"></i></p>
         <ul>
+            <li><a href="homepage.html">
+                <ion-icon name="storefront"></ion-icon> Store
+            </a></li>
+            <li><a href="stylepage.html">
+                <ion-icon name="id-card"></ion-icon> Fit
+              </a></li>
+        <li><a href="#!">
+                <ion-icon name="person"></ion-icon> Profile
+            </a></li>
+        <li><a href="cart.html">
+                <ion-icon name="cart"></ion-icon> Cart
+            </a></li>
             <li><a href="index.html">
                     <ion-icon name="log-out"></ion-icon> Logout
                 </a></li>
@@ -63,13 +75,13 @@
             <span class="menu">
                 <ion-icon name="menu"></ion-icon>
             </span>
-            
+
 
             <ul class="nav">
-                <li><a href="homepage.html" class="active">Store</a></li>
+                <li><a href="homepage.html">Store</a></li>
                 <li><a href="stylepage.html"> Style card</a></li>
                 <li><a href="#!">Profile</a></li>
-                <li><a href="cart.html">Cart</a></li>
+                <li><a href="cart.html"  class="active">Cart</a></li>
                 <li><a href="index.html">Logout</a></li>
             </ul>
 
@@ -78,89 +90,178 @@
             </a>
         </div>
 
-        <div class="bottom-nav">
-            <ul>
-                <li class="bottom-nav-item home">
-                    <ion-icon name="home"></ion-icon> <a href="homepage.html">
-                        <p class="nav-title">HOME</p>
-                    </a>
-                </li>
-                <li class="bottom-nav-item fit">
-                    <ion-icon name="id-card"></ion-icon> <a href="stylepage.html">
-                        <p class="nav-title">FITS</p>
-                    </a>
-                </li>
-                <li class="bottom-nav-item profile">
-                    <ion-icon name="person"></ion-icon> <a href="#!">
-                        <p class="nav-title">PROFILE</p>
-                    </a>
-                </li>
-                <li class="bottom-nav-item cart-nav active-nav">
-                    <ion-icon name="cart"></ion-icon> <a href="cart.html">
-                        <p class="nav-title">CART</p>
-                    </a>
-                </li>
-            </ul>
-        </div>
+       
 
 
 
         <section class="big-container">
-            <div class="cart-holder">
+            <div class="cart-holder scrollable">
 
-                <div class="card">
-                    <div class="qty-holder-cart">
-                        <div class="qty-element dark-btn">
-                            <ion-icon name="add"></ion-icon>
-                        </div>
-                        <div class="qty-element">3</div>
-                        <div class="qty-element dark-btn">
-                            <ion-icon name="remove"></ion-icon>
-                        </div>
+           <div>
+            <div class="card">
+                <div class="qty-holder-cart">
+                    <div class="qty-element dark-btn">
+                        <ion-icon name="add"></ion-icon>
                     </div>
-                    <div class="card-img">
-                        <img src="IMAGE/cargo-2.jpg" alt="">
+                    <div class="qty-element">3</div>
+                    <div class="qty-element dark-btn">
+                        <ion-icon name="remove"></ion-icon>
                     </div>
-                    <div class="card-details">
-                        <ul class="cart-details">
-                            <li>Cargo Pants</li>
-                            <li><i class="bi bi-coin"></i> 5,000</li>
-                        </ul>
-                    </div>
-
-                    <p class="remove-item-form-cart">
-                        <ion-icon name="trash"></ion-icon>
-                    </p>
                 </div>
-
-                <div class="cart-holder">
-
-                    <div class="card">
-                        <div class="qty-holder-cart">
-                            <div class="qty-element dark-btn">
-                                <ion-icon name="add"></ion-icon>
-                            </div>
-                            <div class="qty-element">3</div>
-                            <div class="qty-element dark-btn">
-                                <ion-icon name="remove"></ion-icon>
-                            </div>
-                        </div>
-                        <div class="card-img">
-                            <img src="IMAGE/shirt-3.png" alt="">
-                        </div>
-                        <div class="card-details">
-                            <ul class="cart-details">
-                                <li>Flannel</li>
-                                <li><i class="bi bi-coin"></i> 5,000</li>
-                            </ul>
-                        </div>
-    
-                        <p class="remove-item-form-cart">
-                            <ion-icon name="trash"></ion-icon>
-                        </p>
-                    </div>
-    
+                <div class="card-img">
+                    <img src="IMAGE/cargo-2.jpg" alt="">
+                </div>
+                <div class="card-details">
+                    <ul class="cart-details">
+                        <li>Cargo Pants</li>
+                        <li><i class="bi bi-coin"></i> 5,000</li>
+                    </ul>
+                </div>
+                <p class="remove-item-form-cart">
+                    <ion-icon name="trash"></ion-icon>
+                </p>
             </div>
+
+            <div class="card">
+                <div class="qty-holder-cart">
+                    <div class="qty-element dark-btn">
+                        <ion-icon name="add"></ion-icon>
+                    </div>
+                    <div class="qty-element">3</div>
+                    <div class="qty-element dark-btn">
+                        <ion-icon name="remove"></ion-icon>
+                    </div>
+                </div>
+                <div class="card-img">
+                    <img src="IMAGE/shirt-3.png" alt="">
+                </div>
+                <div class="card-details">
+                    <ul class="cart-details">
+                        <li>Flannel</li>
+                        <li><i class="bi bi-coin"></i> 5,000</li>
+                    </ul>
+                </div>
+                <p class="remove-item-form-cart">
+                    <ion-icon name="trash"></ion-icon>
+                </p>
+            </div>
+            <div class="card">
+                <div class="qty-holder-cart">
+                    <div class="qty-element dark-btn">
+                        <ion-icon name="add"></ion-icon>
+                    </div>
+                    <div class="qty-element">3</div>
+                    <div class="qty-element dark-btn">
+                        <ion-icon name="remove"></ion-icon>
+                    </div>
+                </div>
+                <div class="card-img">
+                    <img src="IMAGE/shirt-3.png" alt="">
+                </div>
+                <div class="card-details">
+                    <ul class="cart-details">
+                        <li>Flannel</li>
+                        <li><i class="bi bi-coin"></i> 5,000</li>
+                    </ul>
+                </div>
+                <p class="remove-item-form-cart">
+                    <ion-icon name="trash"></ion-icon>
+                </p>
+            </div>      <div class="card">
+                <div class="qty-holder-cart">
+                    <div class="qty-element dark-btn">
+                        <ion-icon name="add"></ion-icon>
+                    </div>
+                    <div class="qty-element">3</div>
+                    <div class="qty-element dark-btn">
+                        <ion-icon name="remove"></ion-icon>
+                    </div>
+                </div>
+                <div class="card-img">
+                    <img src="IMAGE/shirt-3.png" alt="">
+                </div>
+                <div class="card-details">
+                    <ul class="cart-details">
+                        <li>Flannel</li>
+                        <li><i class="bi bi-coin"></i> 5,000</li>
+                    </ul>
+                </div>
+                <p class="remove-item-form-cart">
+                    <ion-icon name="trash"></ion-icon>
+                </p>
+            </div>      <div class="card">
+                <div class="qty-holder-cart">
+                    <div class="qty-element dark-btn">
+                        <ion-icon name="add"></ion-icon>
+                    </div>
+                    <div class="qty-element">3</div>
+                    <div class="qty-element dark-btn">
+                        <ion-icon name="remove"></ion-icon>
+                    </div>
+                </div>
+                <div class="card-img">
+                    <img src="IMAGE/shirt-3.png" alt="">
+                </div>
+                <div class="card-details">
+                    <ul class="cart-details">
+                        <li>Flannel</li>
+                        <li><i class="bi bi-coin"></i> 5,000</li>
+                    </ul>
+                </div>
+                <p class="remove-item-form-cart">
+                    <ion-icon name="trash"></ion-icon>
+                </p>
+            </div>
+            <div class="card">
+                <div class="qty-holder-cart">
+                    <div class="qty-element dark-btn">
+                        <ion-icon name="add"></ion-icon>
+                    </div>
+                    <div class="qty-element">3</div>
+                    <div class="qty-element dark-btn">
+                        <ion-icon name="remove"></ion-icon>
+                    </div>
+                </div>
+                <div class="card-img">
+                    <img src="IMAGE/shirt-3.png" alt="">
+                </div>
+                <div class="card-details">
+                    <ul class="cart-details">
+                        <li>Flannel</li>
+                        <li><i class="bi bi-coin"></i> 5,000</li>
+                    </ul>
+                </div>
+                <p class="remove-item-form-cart">
+                    <ion-icon name="trash"></ion-icon>
+                </p>
+            </div>
+            <div class="card">
+                <div class="qty-holder-cart">
+                    <div class="qty-element dark-btn">
+                        <ion-icon name="add"></ion-icon>
+                    </div>
+                    <div class="qty-element">3</div>
+                    <div class="qty-element dark-btn">
+                        <ion-icon name="remove"></ion-icon>
+                    </div>
+                </div>
+                <div class="card-img">
+                    <img src="IMAGE/shirt-3.png" alt="">
+                </div>
+                <div class="card-details">
+                    <ul class="cart-details">
+                        <li>Flannel last</li>
+                        <li><i class="bi bi-coin"></i> 5,000</li>
+                    </ul>
+                </div>
+                <p class="remove-item-form-cart">
+                    <ion-icon name="trash"></ion-icon>
+                </p>
+            </div>
+            <div class="space"></div>
+        </div>
+           </div>
+           
             <div class="cart-pricing">
                 <div class="order-summary">
                     <div class="upper-label">ORDER SUMMARY</div>
@@ -184,11 +285,12 @@
                         <ion-icon name="bag-check"></ion-icon> CHECKOUT
                     </button>
                 </div>
+               
             </div>
     </div>
     </section>
     </div>
-<script src="JS/script.js"></script>
+    <script src="JS/script.js"></script>
     <script>
         $(".mobile-menu").fadeOut('fast');
         $(".overlay").fadeOut('fast');
